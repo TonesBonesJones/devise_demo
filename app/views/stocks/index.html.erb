@@ -1,0 +1,7 @@
+<h1>Devise Example</h1>
+
+<% if user_signed_in? %>
+How about a <%= link_to 'logout', destroy_user_session_url, :method => :delete %> function?
+<% else %>
+Wanna <%= link_to 'Sign In', new_user_session_url %>?
+<% end %>
